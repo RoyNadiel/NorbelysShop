@@ -214,15 +214,15 @@ main .product img{
 @media screen and (max-width: 500px) {
     .product{
         width: 5rem;
-        height: auto;
-        flex-grow: 0;
+        height: auto;                
     }
     .product p{
         font-size: 0.6rem;
+        padding: 5px;
     }
     .product img{
-        width: 4rem;
-        height: auto;
+        width: 5rem;
+        height: auto;        
     }
     header h2 a{
         font-size: 0.8rem;
