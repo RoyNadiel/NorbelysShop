@@ -1,0 +1,259 @@
+*{
+    font-family: 'Microsoft JhengHei Light', sans-serif;
+}
+body{
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+        
+    background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/black-linen-2.png");
+    background-color: #00272e;
+background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    color:white;
+}
+header{    
+    height: 5vh;
+    width: 90%;
+    padding: 1vh 5vw;
+    position: fixed;
+
+    background-color: #00000095;
+    background-color: #00272e95;
+    background-image: url("https://www.transparenttextures.com/patterns/assault.png");    
+    /* border: 1px solid white; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h2 a{
+    text-decoration: none;
+    color: #ccc;
+    font-family: 'Felix Titling';
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+header h2 a:hover{
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+header ul{
+    display: flex;
+    gap: 15px;
+}
+.header-li{
+    list-style: none;
+}
+.header-li a{
+    position: relative;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #55f1ff;
+}
+.header-li a:hover{
+    color: #7addff;
+    transition: all 0.3s ease-in-out;
+}
+.header-li a::after{    
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 0;
+    bottom: -4px;
+
+    content: "";
+    background-color: #55f1ff;
+    
+    transition: all 0.3s ease;
+}
+.header-li a:hover::after{    
+    width: 70%;
+}
+
+#content{
+    display: flex;
+    justify-content: space-around;
+}
+#content aside{
+    width: 15vw;
+    margin: 100px 0px;
+
+    /* border: 1px solid white; */
+    
+    display: flex;
+    flex-direction: column;    
+}
+aside .left-aside-filter-div{
+    width: 9vw;
+    padding: 10px;
+    position: fixed;
+
+    background-color: #00272e;
+    /* border: 1px solid white; */
+    border-radius: 5%;
+    font-size: 1rem;
+    /* box-shadow: 1px 1px 2px 2px #555; */
+
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+aside .left-aside-filter-div .item.label{
+    width: 8vw;
+
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    /* border: 1px solid #000000; */
+}
+aside .left-aside-filter-div .item{
+    width: 6vw;
+    align-self: flex-start;
+}
+
+#content main{
+    width: 60vw;
+    padding: 30px;
+    margin-top: 75px;
+
+    /* border: 1px solid white; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px
+}
+main .product{
+    /* min-width: 8rem; */
+    /* min-height: 8rem; */
+    max-width: 20rem;
+    max-height: 20rem;    
+
+    /* border: 1px solid #aaa; */
+    background-color: #222;
+    background-color: #00272e;
+    box-shadow: 2px 2px 5px 2px #555;
+    color: #fff;
+    font-weight: 600;
+
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+}
+main .product p{
+    color: #ccc;
+    letter-spacing: 1px;
+}
+main .product span{
+    color: rgb(85, 139, 255);
+}
+main .product img{
+    /* min-width: 7rem; */
+    /* min-height: 7rem; */
+    max-width: 14rem;
+    height: auto;
+}
+/* footer{
+    height: 4vh;
+    padding: 0.5vh 5vw;
+    position: relative;
+
+    background-color: #333;
+
+    /* border: 1px solid white; */    
+/* } */
+.whatsapp{
+    max-width: 80px;
+    max-width: 80px;
+    margin-bottom: 50px;
+    padding: 10px;
+    position: fixed;
+    bottom: 1px;
+    right: 50px;
+
+    border-radius: 50%;
+    border: 0;
+    background-color: #00272e;
+    font-size: 4.5rem;
+    list-style: none;
+    text-decoration: none;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+.whatsapp button{
+    max-width: 80px;
+    max-width: 80px;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#whatsapp-icon{
+    font-size: 60px;
+    color: #11ff55;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .product{
+        width: 5rem;
+        height: auto;
+        flex-grow: 0;
+    }
+    .product p{
+        font-size: 0.6rem;
+    }
+    .product img{
+        width: 4rem;
+        height: auto;
+    }
+    header h2 a{
+        font-size: 0.8rem;
+    }
+    .header-li a{
+        font-size: 0.6rem;
+    }
+    .left-aside{
+        margin-left: 15px;
+    }
+    aside .left-aside-filter-div{
+        width: 3rem;
+    }
+    aside .left-aside-filter-div .item.label{
+        font-size: 0.5rem;
+    }
+    aside .left-aside-filter-div .item{
+        font-size: 0.4rem;
+    }
+    .whatsapp{
+        width: 1rem;
+        height: 1rem;
+
+        right: 15px;
+        bottom: -20px;
+    }
+    .whatsapp button{
+        width: 0.5rem;
+        height: 0.5rem;        
+    }
+    #whatsapp-icon{
+        font-size: 1rem;
+    }
+}
